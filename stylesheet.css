@@ -7,19 +7,11 @@
 
 /*----------------------------------- Header CSS -----------------------------------*/
 
-#header{
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #9c4a4a;
-    
-}
-.navbar{
-    text-decoration: none;
-}
+/* Skip Content button  */
 .skip-link {
   position: absolute;
   left: 10px;
+  top: -60px; 
   background: #fff;
   color: #0d2b59;
   padding: 12px 24px;
@@ -27,16 +19,74 @@
   font-size: 16px;
   cursor: pointer;
   z-index: 9999;
+} .skip-link:focus { 
+  top: 10px;
 }
 
-.banner-icons {
+/* header tag */
+#header{
+    padding: 20px;
+    align-items: center;
+    color: #fff;
+    background-color: #9c4a4a;
     text-decoration: none;
-    color: #0c0c0c;
-    font-size: 22px;
-    margin: 0 12px;
-    display: inline-block;
-    /* transition: 0.3s ease; */
+    font-size: 18px;
+    letter-spacing: 0.5px; 
+ }
+#header:hover{
+    background-color: #fff; 
+    transition: background-color 1.5s ease; 
 }
-.banner-icons:hover {
+
+/* navBar */
+.navbar{    
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 20px;
+} .leftNav{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 12px;
+    gap: 15px;
+    margin-left: 190px;
+
+} .rightNav{
+    font-size: 12px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: flex-end;
+} .leftNav a, .rightNav a{
+    text-decoration: none;
+    color: #040404;
+    font-size: 18px;
+    letter-spacing: 0.5px; 
+} .leftNav a:hover, .rightNav a:hover{
+    font-size: 18px;
+    color: #d4a017;
+}
+
+
+.banner-icons {
+    font-size: 22px;
+    margin: 0;
+ 
+} .banner-icons:hover {   
+    color: #d4a017;
+}
+
+/* Name LOGO */
+.logo{
+    text-align: center;
+    font-size: 25px;
+    margin-right: 20px;
+    line-height: 1.1;
+    text-decoration: none;
+    color: #040404;
+
+    letter-spacing: 0.5px; 
+} .logo:hover{
+    font-size: 28px;
     color: #d4a017;
 }
