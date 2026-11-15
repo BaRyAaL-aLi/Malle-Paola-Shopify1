@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+/*----------------------------------- Header CSS -----------------------------------*/
+
+#header{
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #9c4a4a;
+    
+}
+.navbar{
+    text-decoration: none;
+}
+.skip-link {
+  position: absolute;
+  left: 10px;
+  background: #fff;
+  color: #0d2b59;
+  padding: 12px 24px;
+  border: 2px solid #000000;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.banner-icons {
+    text-decoration: none;
+    color: #0c0c0c;
+    font-size: 22px;
+    margin: 0 12px;
+    display: inline-block;
+    /* transition: 0.3s ease; */
+}
+.banner-icons:hover {
+    color: #d4a017;
+}
